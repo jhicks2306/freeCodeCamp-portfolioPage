@@ -3,3 +3,22 @@ html, body {
   margin: 0;
   font-size: medium;
 }
+#topnav {
+  background-color: yellow;
+}
+#bg1 {
+  background-image: url('bgimg-1.jpeg');
+  height: 100%;
+  background-color: rgba(0,0,153,0.8);
+  background-blend-mode: lighten;
+  /*---set parallax background---*/
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*.overlay {
+  background-color: rgba(0,0,153,0.8);
+  background-blend-mode: multiply;
+}
+*/
