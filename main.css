@@ -2,31 +2,76 @@ html, body, main {
   height: 100%;
   margin: 0;
   font-size: medium;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #topnav {
   color: white;
-  background-color: #449DD1;
+  width: 100%;
+
+  background-image: linear-gradient(
+    to left,
+    #91d8ff,
+    rgb(109, 204, 255)
+    );
+
+/*---position nav items---*/
+  position: fixed;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+/*---text styling---*/
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: large;
 }
 
 #topnav a {
-  padding: 1em;
+  padding: 5px 5px 5px 5px;
   text-decoration: none;
   color: white;
+  text-align: center;
 }
 
-#bg1 {
-  background-image: url('bgimg-1.jpeg');
-  height: 100%;
+#topnav a:hover {
+  color: #e8e8e8;
+}
 
-  /*---colour overlay---*/
-  background-color: rgba(0,0,153,0.8);
-  background-blend-mode: lighten;
+/*---nav bar as row along top on large screens---*/
+@media only screen and (min-width: 600px) {
+  #topnav a {
+    padding: 1em 5em 1em 1em;
+  }
+
+  #topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: space-around;
+  }
+}
+
+#intro-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /*---colour bckground---*/
+  background-image: linear-gradient(
+    to left,
+    #91d8ff,
+    rgb(109, 204, 255)
+    );
+
+  /*--- take out image background for now
+  url('bgimg-1.jpeg');
+  background-color: ;
+  background-blend-mode:overlay;
+  ---*/
 
   /*---set parallax background---*/
   background-size: cover;
@@ -35,7 +80,33 @@ html, body, main {
   background-position: center;
 }
 
-#sctn1 {
+/*---intropage content---*/
+#intro-page h1, p {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+#intro-page h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+#intro-page p {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+
+#page1 {
   height: 100%;
-  background-color: #EEEEEE;
+  background-color: #fcfcfc;
+}
+
+/*---style project panes---*/
+.textbox {
+  background-color: #68D8D6;
+  border-radius: 30px;
+  height: 50vh;
+  width: 50vw;
 }
