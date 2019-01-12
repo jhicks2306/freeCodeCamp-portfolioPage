@@ -5,7 +5,7 @@ html, body, main {
   font-family: 'Montserrat', sans-serif;
 }
 
-#topnav {
+#navbar {
   color: white;
   width: 100%;
 
@@ -28,39 +28,25 @@ html, body, main {
   font-size: large;
 }
 
-#topnav a {
+#navbar a {
   padding: 5px 5px 5px 5px;
   text-decoration: none;
   color: white;
   text-align: center;
 }
 
-#topnav a:hover {
+#navbar a:hover {
   color: #e8e8e8;
 }
 
-/*---nav bar as row along top on large screens---*/
-@media only screen and (min-width: 600px) {
-  #topnav a {
-    padding: 1em 5em 1em 1em;
-  }
-
-  #topnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: space-around;
-  }
-}
-
-#intro-page {
+#welcome-section {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  /*---colour bckground---*/
+  /*---colour background---*/
   background-image: linear-gradient(
     to left,
     #91d8ff,
@@ -80,33 +66,99 @@ html, body, main {
   background-position: center;
 }
 
-/*---intropage content---*/
-#intro-page h1, p {
-  color: white;
-  text-align: center;
-  margin: 0;
-}
-
-#intro-page h1 {
+/*---welcome page content---*/
+#welcome-section h1 {
   font-size: 80px;
   font-weight: bold;
+  color: rgb(109, 204, 255);
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
 
-#intro-page p {
+#welcome-section span {
   font-size: 30px;
   font-weight: normal;
+  color: rgb(109, 204, 255);
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
 
-
-#page1 {
-  height: 100%;
+#projects {
   background-color: #fcfcfc;
 }
 
-/*---style project panes---*/
-.textbox {
-  background-color: #68D8D6;
+#projects h1 {
+  margin-top: 0;
+  padding: 10px;
+  height: 10%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 80px;
+}
+.panel {
+  color: #444444;
+  background-image: linear-gradient(
+    to left,
+    #91d8ff,
+    rgb(109, 204, 255)
+    );
+
   border-radius: 30px;
-  height: 50vh;
-  width: 50vw;
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+  box-shadow: -2px 2px 4px grey;
+
+  text-align: center;
+}
+
+.panel p {
+  padding: 30px;
+}
+@media only screen and (min-width: 600px) {
+  /*---nav bar as row along top on large screens---*/
+  #navbar a {
+    padding: 1em 5em 1em 1em;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: space-around;
+  }
+/*---project panels to row---*/
+  .container {
+    flex-direction: row;
+  }
+}
+footer {
+  background-color: #5f5f5f;
+  color: white;
+  height: 30%;
+  width:  100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  display: inline-block;
+  white-space: pre;
+}
+
+#profile-link {
+  text-decoration: none;
+  font-size: large;
+  color: white;
 }
