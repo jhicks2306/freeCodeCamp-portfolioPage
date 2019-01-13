@@ -1,8 +1,10 @@
 html, body, main {
   height: 100%;
   margin: 0;
-  font-size: medium;
+}
+* {
   font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
 }
 
 #navbar {
@@ -23,16 +25,13 @@ html, body, main {
   align-content: center;
 
 /*---text styling---*/
-  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: large;
 }
 
 #navbar a {
   padding: 5px 5px 5px 5px;
-  text-decoration: none;
   color: white;
-  text-align: center;
 }
 
 #navbar a:hover {
@@ -45,6 +44,8 @@ html, body, main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  color: rgb(109, 204, 255);
 
   /*---colour background---*/
   background-image: linear-gradient(
@@ -59,20 +60,20 @@ html, body, main {
   background-blend-mode:overlay;
   ---*/
 
-  /*---set parallax background---*/
+  /*---set parallax background-
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  --*/
+
 }
 
 /*---welcome page content---*/
 #welcome-section h1 {
   font-size: 80px;
   font-weight: bold;
-  color: rgb(109, 204, 255);
   background-color: white;
-  text-align: center;
   margin: 10px;
   padding: 10px;
 }
@@ -82,7 +83,6 @@ html, body, main {
   font-weight: normal;
   color: rgb(109, 204, 255);
   background-color: white;
-  text-align: center;
   margin: 10px;
   padding: 10px;
 }
@@ -91,13 +91,13 @@ html, body, main {
   background-color: #fcfcfc;
 }
 
-#projects h1 {
+.section-header {
   margin-top: 0;
-  padding: 10px;
+  padding: 50px 10px 10px 100px;
   height: 10%;
 }
 
-.container {
+#projects .container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -105,7 +105,8 @@ html, body, main {
   align-items: center;
   padding-bottom: 80px;
 }
-.panel {
+
+#projects .project-tile {
   color: #444444;
   background-image: linear-gradient(
     to left,
@@ -122,7 +123,7 @@ html, body, main {
   text-align: center;
 }
 
-.panel p {
+.project-tile p {
   padding: 30px;
 }
 @media only screen and (min-width: 600px) {
@@ -137,11 +138,12 @@ html, body, main {
     justify-content: flex-end;
     align-content: space-around;
   }
-/*---project panels to row---*/
-  .container {
+/*---project items to row---*/
+  #projects .container {
     flex-direction: row;
   }
 }
+
 footer {
   background-color: #5f5f5f;
   color: white;
@@ -158,7 +160,6 @@ footer span {
 }
 
 #profile-link {
-  text-decoration: none;
   font-size: large;
   color: white;
 }
