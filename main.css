@@ -2,9 +2,15 @@ html, body, main {
   height: 100%;
   margin: 0;
 }
+
 * {
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
+}
+
+main {
+  text-align: center;
+  color: #444444;
 }
 
 #navbar {
@@ -23,6 +29,7 @@ html, body, main {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  text-align: center;
 
 /*---text styling---*/
   font-weight: bold;
@@ -89,12 +96,14 @@ html, body, main {
 
 #projects {
   background-color: #fcfcfc;
+  text-align: center;
 }
 
 .section-header {
   margin-top: 0;
-  padding: 50px 10px 10px 100px;
+  padding: 10px 10px 10px 10px;
   height: 10%;
+  font-size: 40px;
 }
 
 #projects .container {
@@ -107,7 +116,6 @@ html, body, main {
 }
 
 #projects .project-tile {
-  color: #444444;
   background-image: linear-gradient(
     to left,
     #91d8ff,
