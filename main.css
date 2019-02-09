@@ -16,7 +16,7 @@ main {
 #navbar {
   color: white;
   width: 100%;
-
+  transition: 0.5s;
   background-image: linear-gradient(
     to left,
     #91d8ff,
@@ -94,14 +94,27 @@ main {
   padding: 10px;
 }
 
-#projects {
-  background-color: #fcfcfc;
+#about, #projects, #skills  {
+  background-color: #FEFEFE;
   text-align: center;
 }
 
+hr {
+  background-color: #777777;
+  margin: 0;
+  padding: 0;
+  margin-left: 45%;
+  width: 10%;
+  height: 1px;
+}
+#about p {
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
 .section-header {
-  margin-top: 0;
-  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
   height: 10%;
   font-size: 40px;
 }
@@ -112,7 +125,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 #projects .project-tile {
@@ -134,6 +147,22 @@ main {
 .project-tile p {
   padding: 30px;
 }
+
+.project-link {
+  color: white;
+  background-color: #32abfc;
+  text-decoration: none;
+  border-radius: 26px;
+  padding: 20px 15px 20px 15px;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.floatingNav {
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px #999;
+}
+
 @media only screen and (min-width: 600px) {
   /*---nav bar as row along top on large screens---*/
   #navbar a {
